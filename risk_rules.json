@@ -1,0 +1,94 @@
+{
+  "rules": [
+    {
+      "id": "R001",
+      "category": "Indemnification",
+      "description": "Indemnity should be mutual, not one-sided",
+      "severity": "High",
+      "risk_explanation": "One-sided indemnification puts all financial risk on one party",
+      "prompt": "Does this clause only protect one party? If yes, flag as risk.",
+      "suggestion_template": "Change to mutual indemnification where both parties protect each other"
+    },
+    {
+      "id": "R002",
+      "category": "Governing Law",
+      "description": "Must specify New York or California law",
+      "severity": "Medium",
+      "risk_explanation": "Choosing the wrong jurisdiction can increase legal costs",
+      "prompt": "Does this specify Governing Law as NY or CA? If not, flag.",
+      "suggestion_template": "Specify governing law as New York or California"
+    },
+    {
+      "id": "R003",
+      "category": "Termination",
+      "description": "Notice period must be at least 30 days",
+      "severity": "High",
+      "risk_explanation": "Short notice periods give insufficient time to transition",
+      "prompt": "What is the termination notice period? If under 30 days, flag.",
+      "suggestion_template": "Increase termination notice period to 30-60 days"
+    },
+    {
+      "id": "R004",
+      "category": "Confidentiality",
+      "description": "Confidentiality clause must exist",
+      "severity": "High",
+      "risk_explanation": "Without confidentiality, sensitive information could be exposed",
+      "prompt": "Is there a confidentiality clause? If missing, flag.",
+      "suggestion_template": "Add a comprehensive confidentiality clause"
+    },
+    {
+      "id": "R005",
+      "category": "Payment Terms",
+      "description": "Payment terms must be clearly defined",
+      "severity": "Medium",
+      "risk_explanation": "Vague payment terms lead to disputes",
+      "prompt": "Are payment amounts and due dates specified? If vague, flag.",
+      "suggestion_template": "Clearly specify payment amounts, due dates, and late penalties"
+    },
+    {
+      "id": "R006",
+      "category": "Dispute Resolution",
+      "description": "Must specify arbitration or court jurisdiction",
+      "severity": "Medium",
+      "risk_explanation": "Without dispute resolution, legal battles become expensive",
+      "prompt": "Is there a dispute resolution clause? If missing, flag.",
+      "suggestion_template": "Add arbitration clause with specified venue"
+    },
+    {
+      "id": "R007",
+      "category": "Intellectual Property",
+      "description": "IP ownership must be clearly assigned",
+      "severity": "High",
+      "risk_explanation": "Unclear IP ownership can lead to ownership disputes",
+      "prompt": "Does this contract clearly state who owns created IP? If missing, flag.",
+      "suggestion_template": "Add explicit IP ownership and licensing terms"
+    },
+    {
+      "id": "R008",
+      "category": "Liability Limitation",
+      "description": "Liability caps should be reasonable",
+      "severity": "High",
+      "risk_explanation": "Unlimited liability puts the company at financial risk",
+      "prompt": "Does this contract limit liability? If missing or unlimited, flag.",
+      "suggestion_template": "Limit liability to a specific amount or insurance coverage"
+    },
+    {
+      "id": "R009",
+      "category": "Non-Compete",
+      "description": "Non-compete should be reasonable and limited",
+      "severity": "Low",
+      "risk_explanation": "Overly broad non-competes may be unenforceable",
+      "prompt": "Is there a non-compete clause? If overly broad, flag.",
+      "suggestion_template": "Limit non-compete to specific industry, time, and geography"
+    },
+    {
+      "id": "R010",
+      "category": "Representations & Warranties",
+      "description": "Warranties should be limited",
+      "severity": "Medium",
+      "risk_explanation": "Unlimited warranties create open-ended obligations",
+      "prompt": "Are warranties limited in time and scope? If unlimited, flag.",
+      "suggestion_template": "Limit warranties to specific period and scope"
+    }
+  ]
+}

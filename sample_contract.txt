@@ -1,0 +1,17 @@
+Sample Service Agreement
+
+This Agreement is made on January 1, 2024, between TechCorp Inc. and Client Solutions LLC.
+
+1. SERVICES: TechCorp Inc. shall provide software development services.
+
+2. INDEMNIFICATION: TechCorp Inc. agrees to indemnify and hold harmless Client Solutions LLC from any claims arising from the services provided.
+
+3. GOVERNING LAW: This contract shall be governed by the laws of Texas.
+
+4. TERMINATION: Either party may terminate this agreement upon fifteen (15) days written notice.
+
+5. CONFIDENTIALITY: Client Solutions LLC agrees to keep all proprietary information confidential.
+
+6. PAYMENT TERMS: Client Solutions LLC shall pay TechCorp Inc. as per the agreed schedule.
+
+7. DISPUTE RESOLUTION: Any dispute arising out of this agreement shall be resolved through arbitration.
